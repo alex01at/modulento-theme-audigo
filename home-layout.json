@@ -1,0 +1,100 @@
+[
+  {
+    "id": "hero",
+    "type": "hero",
+    "enabled": true,
+    "settings": {},
+    "texts": {
+      "de": {
+        "title": "Gebote auf Raritäten, Sammlerstücke und Premium-Fahrzeuge.",
+        "text": "Jede Auktion läuft bis zu einem festen Ende. Wer am Schluss das höchste Gebot abgibt, erhält das Los."
+      },
+      "en": {
+        "title": "Bids on rare objects, collectibles and premium vehicles.",
+        "text": "Every auction runs to a fixed end. The highest bid at the close wins the lot."
+      }
+    }
+  },
+  {
+    "id": "categories",
+    "type": "categories",
+    "enabled": true,
+    "settings": {},
+    "texts": {
+      "de": {
+        "heading": "Kategorien"
+      },
+      "en": {
+        "heading": "Categories"
+      }
+    }
+  },
+  {
+    "id": "offers",
+    "type": "offers",
+    "enabled": true,
+    "settings": {
+      "count": 4
+    },
+    "texts": {
+      "de": {
+        "heading": "Aktuelle Auktionen"
+      },
+      "en": {
+        "heading": "Current auctions"
+      }
+    }
+  },
+  {
+    "id": "steps",
+    "type": "text",
+    "enabled": true,
+    "settings": {},
+    "texts": {
+      "de": {
+        "heading": "So funktioniert die Auktion",
+        "body": "<ol><li><strong>Registrieren und stöbern.</strong> Ein Konto ist schnell angelegt. Die Lose zeigen Beschreibung, Zustand und den aktuellen Preis.</li><li><strong>Bieten.</strong> Ein Gebot ist verbindlich und muss die Mindeststeigerung erreichen. Wer überboten wird, bekommt eine Nachricht.</li><li><strong>Zuschlag und Übergabe.</strong> Das höchste Gebot am Ende wird zur Bestellung. Übergabe und Bestätigung des Empfangs laufen auf der Bestellseite.</li></ol>"
+      },
+      "en": {
+        "heading": "How the auction works",
+        "body": "<ol><li><strong>Register and browse.</strong> An account takes a moment. Each lot shows its description, condition and current price.</li><li><strong>Bid.</strong> A bid is binding and has to reach the minimum step. Anyone who is outbid gets a message.</li><li><strong>Win and handover.</strong> The highest bid at the end becomes an order. Handover and confirmation of receipt run on the order page.</li></ol>"
+      }
+    }
+  },
+  {
+    "id": "providers",
+    "type": "providers",
+    "enabled": true,
+    "settings": {
+      "count": 3
+    },
+    "texts": {
+      "de": {
+        "heading": "Auktionshäuser und Verkäufer"
+      },
+      "en": {
+        "heading": "Auction houses and sellers"
+      }
+    }
+  },
+  {
+    "id": "seller",
+    "type": "text",
+    "enabled": true,
+    "settings": {},
+    "texts": {
+      "de": {
+        "heading": "Du möchtest verkaufen?",
+        "body": "<p>Stelle deine Objekte als Auktion ein: mit Startpreis, Mindeststeigerung und einer Laufzeit von einem bis zu vierzehn Tagen.</p>",
+        "button_label": "Jetzt Verkäufer werden",
+        "button_url": "/account/provider"
+      },
+      "en": {
+        "heading": "Want to sell?",
+        "body": "<p>List your items as auctions: with a starting price, a minimum step and a run of one to fourteen days.</p>",
+        "button_label": "Become a seller",
+        "button_url": "/account/provider"
+      }
+    }
+  }
+]

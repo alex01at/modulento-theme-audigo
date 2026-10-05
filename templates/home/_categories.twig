@@ -1,0 +1,29 @@
+{# Receives block: texts (heading). The category tree, as cards. #}
+{% set tree = categories() %}
+{% if tree %}
+    <section class="band band-white">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">{{ trans('core.offers.categories') }}</p>
+                    <h2 data-field="heading">{{ block.texts.heading }}</h2>
+                </div>
+                <a class="more" href="{{ url('/offers') }}">{{ trans('core.offers.all') }}</a>
+            </div>
+            <ul class="category-grid">
+                {% for top in tree|slice(0, 8) %}
+                    <li>
+                        <a href="{{ url(top.path) }}">
+                            <span class="category-mark tone-{{ loop.index0 % 4 + 1 }}" aria-hidden="true">{{ top.name|first|upper }}</span>
+                            <strong>{{ top.name }}</strong>
+                            {% if top.children %}
+                                <span class="muted">{{ top.children|map(child => child.name)|slice(0, 4)|join(', ') }}</span>
+                            {% endif %}
+                            <small>{{ trans(top.offer_count == 1 ? 'core.offers.total_one' : 'core.offers.total', {count: top.offer_count}) }}</small>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endif %}

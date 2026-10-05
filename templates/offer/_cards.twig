@@ -1,0 +1,27 @@
+{# A list of lot cards. Receives "offers". The price is the current one: the start price until the first bid. #}
+{% import '_icons.twig' as icons %}
+<ul class="card-list offer-cards lot-cards">
+    {% for offer in offers %}
+        <li>
+            <a class="card-image" href="{{ url(offer.path) }}" tabindex="-1" aria-hidden="true">
+                {% if offer.thumb %}
+                    <img src="{{ offer.thumb }}" alt="" loading="lazy">
+                {% else %}
+                    <span class="card-image-empty">{{ icons.icon('image') }}</span>
+                {% endif %}
+            </a>
+            <div class="card-body">
+                <span class="lot-tag">{{ trans('theme.auction.tag') }}</span>
+                <a class="card-title" href="{{ url(offer.path) }}">{{ offer.title }}</a>
+                {% if offer.summary %}<p>{{ offer.summary }}</p>{% endif %}
+            </div>
+            <div class="card-foot lot-price">
+                <span>
+                    <small>{{ trans('theme.auction.current') }}</small>
+                    {% if offer.price_from is not null %}<strong>{{ money(offer.price_from, offer.currency) }}</strong>{% endif %}
+                </span>
+                <a class="more" href="{{ url(offer.path) }}">{{ trans('theme.auction.view') }} {{ icons.icon('arrow') }}</a>
+            </div>
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,16 @@
+{# Receives block: texts (heading), count. The latest lots as cards. #}
+{% set offers = latest_offers(block.count) %}
+{% if offers %}
+    <section class="band">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">{{ trans('theme.offers.eyebrow') }}</p>
+                    <h2 data-field="heading">{{ block.texts.heading }}</h2>
+                </div>
+                <a class="more" href="{{ url('/offers') }}">{{ trans('core.offers.all') }}</a>
+            </div>
+            {% include 'offer/_cards.twig' %}
+        </div>
+    </section>
+{% endif %}

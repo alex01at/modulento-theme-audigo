@@ -495,6 +495,10 @@ img.avatar { display: block; object-fit: cover; }
 .account-menu-items form { margin: 0; }
 .header-actions .account-menu-items .link-button { text-decoration: none; }
 
+/* --- The inbox envelope in the header, with its unread count --- */
+.inbox-link { position: relative; display: inline-flex; }
+.unread-badge { position: absolute; top: -.5rem; right: -.6rem; min-width: 1.2rem; height: 1.2rem; padding: 0 .3rem; border-radius: 999px; background: #dc2626; color: #fff; font-size: .68rem; font-weight: 700; line-height: 1.2rem; text-align: center; }
+
 /* --- "Show password", added by password-toggle.js --- */
 .password-field { display: flex; gap: .4rem; }
 .password-field input { flex: 1 1 auto; min-width: 0; }

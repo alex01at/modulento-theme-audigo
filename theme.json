@@ -1,6 +1,6 @@
 {
     "id": "audigo",
     "name": "Audigo",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "requires": "0.37.0"
 }

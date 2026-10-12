@@ -1,7 +1,7 @@
 {# Receives block: texts (heading), count. The latest lots as cards. #}
 {% set offers = latest_offers(block.count) %}
 {% if offers %}
-    <section class="band">
+    <section data-home-block="{{ block.id }}" class="band">
         <div class="container">
             <div class="section-head">
                 <div>

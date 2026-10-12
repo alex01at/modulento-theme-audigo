@@ -1,7 +1,7 @@
 {# Receives block: texts (title, text, button_label, button_url). The first thing a visitor sees:
    the lots, with a search for them where the catalogue is installed. #}
 {% set searchable = has_catalogue() %}
-<section class="hero hero-auction">
+<section data-home-block="{{ block.id }}" class="hero hero-auction">
     <div class="container">
         <p class="badge"><span class="live-dot" aria-hidden="true"></span>{{ trans('theme.hero.badge') }}</p>
         <h1 data-field="title">{{ block.texts.title }}</h1>

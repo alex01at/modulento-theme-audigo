@@ -1,7 +1,7 @@
 {
     "id": "audigo",
     "name": "Audigo",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "requires": "0.61.0",
     "description": "A dark, dramatic look for an auction house, with a live sign and lot cards that show the current price."
 }

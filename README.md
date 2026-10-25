@@ -50,3 +50,7 @@ blocks below `:root` carry the same values.
 No build step. The package is the repository without the files listed in
 `.gitattributes`; a tag `vX.Y.Z` that matches `version` in `theme.json` makes
 the release, which carries the package and its checksum.
+
+## Licence
+
+Dies ist ein kommerzielles Produkt, lizenziert je Installation unter dem Endnutzer-Lizenzvertrag in `LICENSE` - nicht GPL (der Modulento-Kern selbst bleibt GPL-3.0-or-later; dieses Theme ist ein eigenständiges, proprietäres Werk). Die Schrift Plus Jakarta Sans in `assets/fonts/` ist unter der SIL Open Font License lizenziert, siehe `assets/fonts/OFL.txt`.
